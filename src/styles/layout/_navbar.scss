@@ -1,0 +1,11 @@
+#navbar{
+    display:flex;height: 105px;width:100%;position:absolute;background:transparent;top:0;align-items:center;
+    .logo-wrapper{
+        img{height:75px;}
+    }
+    .nav-list{margin-left: auto;display: flex;flex-direction: row;
+        li{list-style: none;padding: 0px 17px;
+            a{font-size: 12px;line-height: 18px;font-family: 'Open Sans',sans-serif;color:#F8F9FA;text-decoration: none;text-transform: uppercase;}
+        }
+    }
+}
