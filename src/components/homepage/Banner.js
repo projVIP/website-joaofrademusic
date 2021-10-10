@@ -1,9 +1,25 @@
 import bannerImg from '../../assets/jpg/banner.jpg';
+import { useContext } from 'react';
+import { DataContext } from '../../scripts/Context';
+import SocialMedia from '../global/SocialMedia';
+
+
 
 function Banner(props) {
+    const data = useContext(DataContext);
+
     return (
         <section id="mod-banner">
-            <img src={bannerImg} />
+            <div className="banner-content" style={{ backgroundImage: "url(" + bannerImg + ")" }}>
+                <div className="banner-text-wrapper">
+                    <div className="banner-title">{data.banner.bannerTitle}</div>
+                    <a className="banner-link" href={data.banner.bannerBtn.title} title={"Go to " + data.banner.bannerBtn.title}>{data.banner.bannerBtn.title}</a>
+                </div>
+            </div>
+
+            <div className="banner-socialmedia">
+                <SocialMedia />
+            </div>
         </section>
     );
 }

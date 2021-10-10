@@ -1,12 +1,18 @@
+import logoImage from '../../assets/svg/logo.svg';
+import { useContext } from 'react';
+import { DataContext } from '../../scripts/Context';
+
 function Navbar(props) {
+    const data = useContext(DataContext);
+
     return (
         <nav className="" id="navbar">
             <div className="custom-container">
-                <a className="logo-wrapper" href={props.logoSettings.logoLink} title={props.logoSettings.logoTitle}>
-                    <img src={props.logoSettings.logoImage} alt={props.logoSettings.logoAlt} />
+                <a className="logo-wrapper" href={data.logo.logoLink} title={data.logo.logoTitle}>
+                    <img src={logoImage} alt={data.logo.logoAlt} />
                 </a>
                 <ul className="nav-list">
-                    {props.navbar.map((elem, index) => {
+                    {data.navbar.map((elem, index) => {
                         return (
                             <li className="nav-li">
                                 <a {...elem.navLinkSettings}>{elem.navLinkContent}</a>

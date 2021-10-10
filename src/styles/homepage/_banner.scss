@@ -1,3 +1,14 @@
-#mod-banner{width:100%;
-    img{width:100%;}
+@import "../abstracts/index";
+
+#mod-banner{width:100%;position:relative;
+    .banner-content{width:100%;height: rem(802);background-size: cover;background-repeat: no-repeat;display:flex;align-items:center;justify-content:center;
+        .banner-text-wrapper{
+            .banner-title{display: block;@include font(28,38,$font-family--main);color:$color--light}
+            .banner-link{display: flex;height:rem(50);width:rem(170);align-items: center;justify-content: center;background: $color--light-opacity;margin:0 auto;margin-top: rem(16);border-radius: 100px;@include font(16,20,$font-family--main);color:$color--light-opacity;border:1px solid $color--border-light;}
+        }
+    }
+
+    .banner-socialmedia{position:absolute;top:61%;left:rem(32);transform: translateY(-61%);
+        .social-media-btn{display:block;margin-top: rem(8);}
+    }
 }
