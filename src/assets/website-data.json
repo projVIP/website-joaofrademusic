@@ -8,22 +8,22 @@
     {
       "socialMediaTitle": "Facebook",
       "socialMediaLink": "https://www.facebook.com",
-      "socialMediaIcon": "/assets/svg/face.svg"
+      "socialMediaIcon": "/assets/socialMedia/face.svg"
     },
     {
       "socialMediaTitle": "Instagram",
       "socialMediaLink": "https://www.instagram.com",
-      "socialMediaIcon": "/assets/svg/insta.svg"
+      "socialMediaIcon": "/assets/socialMedia/insta.svg"
     },
     {
       "socialMediaTitle": "Youtube",
       "socialMediaLink": "https://www.youtube.com",
-      "socialMediaIcon": "/assets/svg/youtube.svg"
+      "socialMediaIcon": "/assets/socialMedia/youtube.svg"
     },
     {
       "socialMediaTitle": "Bandcamp",
       "socialMediaLink": "https://www.bandcamp.com",
-      "socialMediaIcon": "/assets/svg/bandcamp.svg"
+      "socialMediaIcon": "/assets/socialMedia/bandcamp.svg"
     }
   ],
   "navbar": [
@@ -68,14 +68,15 @@
     "bannerBtn": {
       "title": "Listen here",
       "link": "/"
-    }
+    },
+    "bannerImg": "/assets/banner/banner.jpg"
   },
   "aboutInfo": {
     "title": "About",
     "description": "João Frade nasceu em abril de 1983 em Albufeira.\nDesde tenra idade que demonstrou uma enorme aptidão e sensibilidade musical levando a que tivesse ingressado na escola ETAC a cargo do professor Hermenegildo Guerreiro.\nDurante esse período foi galardoado com inúmeros prémios a nível nacional e internacional, participando nos mais variados eventos artísticos.\nNo ano de 2002 ingressa no CNIMA em França, um dos mais prestigiados centros especializados no ensino de acordeão em todo o mundo, onde tem a oportunidade de contactar com músicos de todo o mundo e onde na sequência vence os mais importantes prémios a nível mundial como a Coupe Mondiale, Trophé Mondiale e o prémio internacional de Castelfidardo, o músico conta ainda com distinções como o prémio Terras de Loulé, Primus Inter-Pares e ainda a medalha de mérito “grau ouro” do município de Albufeira.\nDe regresso a Portugal começa a desenvolver projectos próprios e a trabalhar como Side man, compositor, arranjador e produtor.\nEm 2009 começa a frequentar a licenciatura “ramo” jazz na escola superior de música de Lisboa.\nApós este período torna-se um dos músicos mais requisitados da cena musical portuguesa e não só, nomes como Mariza, Maria João Mário Laginha, Pedro Jóia, Jorge Pardo, Carles Benavent, Alain Peréz, Mayra Andrade, Lura, Adiafa, Luis Represas, Munir Hossn, Ney Matogrosso, Munir Hossn, Roberto Mendes, Dino d´Santiago, Flora Purim e Airto Moreira, Eduardo Paim, Johan Zachrisson, Carminho, Maui\nRamirez, Sandra Carrasco, Nuno Guerreiro, Susana\nTravassos, Diego Guerrero, Marenostrum, Anne Carrére, Manuel de Oliveira, Oquestrada entre tantos outros…\nGrava e Lança o seu primeiro disco em duo com o prestigiado multi-instrumentista Munir Hossn em 2013 o qual se intitula “piriquitos e botonetes” fruto de um trabalho de pesquisa e criação de uma nova visão musical sobre a musica do sul de Portugal e a Chula do Recôncavo Baiano no Brasil.\nA partir desta fase João Frade começa a redirecionar o seu foco para uma forma mais pessoal de pensar e estar na música, a qual começou a designar de “Música Portuguesa Criativa” e consiste numa fusão de ritmos tradicionais das regiões mais a sul do país e não só, com melodias e ritmos do mediterrâneo juntamente com o jazz norte americano e a World Music.\nRecentemente lançou o seu disco “homónimo” em\ncolaboração com os artistas Michael Olivera e Munir Hossn, produzido por este ultimo, o disco solo “Solilóquio” e o recém gravado dueto com o Violinista João Silva o qual irá ser lançado durante o ano de 2021 intitulado “Lugares”.\nParalelamente têm participado activamente e desenvolvido os projectos Moda Vestra, Pedro Jóia Trio, Manuel de Oliveira “Entre” e “Ibéria”, “Deux Accordéons une Voix”, Marenostrum, e João Frade & Aenigmaticus Orchestra, sendo também músico residente na banda da artista Mariza.\nTêm se apresentado um pouco por todo o mundo nos mais prestigiados palcos em países como, Estados Unidos, Canadá, Rússia, Suécia, Noruega, Alemanha, Finlândia, Roménia, Itália, Brasil, Dinamarca, China, Letónia, Lituânia, Polónia, Angola etc…\nJoão Frade tem se revelado um dos músicos mais ecléticos e criativo da cena musical Portuguesa, demonstrando uma enorme inquietação criativa e sempre na busca de novos horizontes.\n",
-    "image1": "",
-    "image2": "",
-    "image3": ""
+    "image1": "/assets/about/image1.jpg",
+    "image2": "/assets/about/image2.jpg",
+    "image3": "/assets/about/image3.jpg"
   },
   "discografia": {
     "discoImg": "/src/assets/disco1.jpg",

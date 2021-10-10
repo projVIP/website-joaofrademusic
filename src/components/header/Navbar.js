@@ -14,8 +14,8 @@ function Navbar(props) {
                 <ul className="nav-list">
                     {data.navbar.map((elem, index) => {
                         return (
-                            <li className="nav-li">
-                                <a {...elem.navLinkSettings}>{elem.navLinkContent}</a>
+                            <li className="nav-li" key={index}>
+                                <a onClick={props.linkOnClick} {...elem.navLinkSettings}>{elem.navLinkContent}</a>
                             </li>
                         )
                     })}

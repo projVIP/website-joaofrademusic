@@ -1,2 +1,6 @@
-.custom-container{display:flex;width:100%;padding:0 32px;}
+@import "../abstracts/index";
+
+.custom-container{display:flex;width:100%;max-width: rem(1136);margin:0 auto;}
 a{text-decoration: none;}
+body{background:$blue--bg;overflow-x: hidden;}
+section{max-width: 100%;}

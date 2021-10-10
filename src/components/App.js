@@ -5,11 +5,19 @@ import Navbar from './header/Navbar';
 import Banner from './homepage/Banner';
 import GetDataFunctions from '../scripts/GetDataFunctions';
 import { DataContext } from '../scripts/Context';
+import About from './homepage/About';
 
 const fetchData = async () => {
   let dataFetched = await GetDataFunctions.fetchData;
   return dataFetched;
 };
+
+const navOnClick = (e) => {
+  e.preventDefault();
+
+  let clickedItem = e.target.href.split('#')[1];
+  document.getElementById(clickedItem).scrollIntoView({ behavior: 'smooth', block: 'start'});;
+}
 
 function App() {
 
@@ -24,8 +32,9 @@ function App() {
     return (
       <DataContext.Provider value={data}>
         <div className="App">
-          <Navbar />
+          <Navbar linkOnClick={navOnClick} />
           <Banner />
+          <About />
         </div>
       </DataContext.Provider>
     );

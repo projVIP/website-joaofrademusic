@@ -6,9 +6,9 @@ function SocialMedia() {
 
     return (
         <>
-            {data.socialMedia.map((item) => {
+            {data.socialMedia.map((item, index) => {
                 return (
-                    <a className="social-media-btn" href={item.socialMediaLink} target="_blank" title={item.socialMediaTitle}>
+                    <a key={index} className="social-media-btn" href={item.socialMediaLink} target="_blank" title={item.socialMediaTitle}>
                         <img src={item.socialMediaIcon} alt={item.socialMediaTitle} />
                     </a>
                 )

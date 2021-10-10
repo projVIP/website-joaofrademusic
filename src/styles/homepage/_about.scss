@@ -1,0 +1,18 @@
+@import "../abstracts/index";
+
+#about{display:flex;width:100%;flex-wrap: wrap;background: $blue--gradient;
+    .custom-container{max-width: rem(1183);position:relative;}
+    .about-text-wrapper{width:50%;text-align:left;
+        .about-title{@include font(28,38,$font-family--main);color:$color--light;margin-top: rem(45);display:flex;padding-left:rem(32);padding-right:rem(16);}
+        .about-description{@include font(16,24,$font-family--main);color:$color--light;margin-top: rem(32);padding-left:rem(32);padding-right:rem(16);max-height: rem(767);overflow:hidden;}
+        .read-more{width:rem(162);height: rem(50);display: flex;align-items: center;justify-content: center;background: $color--light-opacity;border-radius: rem(100);color: $color--light-opacity;@include font(16,20,$font-family--main);margin-top: rem(42);margin-left: rem(32);cursor: pointer;text-transform: capitalize;}
+    }
+    .about-photos{width: 50%;position: absolute;flex-shrink:0;right:0;display:flex;flex-wrap:wrap;
+        .img-1{transform: translateY(rem(-96));transition: all 0.3s ease;width:100%;}
+        .img-2{margin-left: auto;transform: translateY(rem(-262));z-index: 9;}
+        .img-3{transform: translateY(rem(-302));}
+        img{filter: grayscale(1);
+            &:hover{filter: grayscale(0);}
+        }
+    }
+}
