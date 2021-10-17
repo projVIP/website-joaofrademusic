@@ -1,0 +1,28 @@
+@import "../abstracts/index";
+
+#mod-discografia{margin-bottom: rem(55);transform:translateY(-204px);
+    .custom-container{
+        .swiper-slide{
+            .item{margin-right: rem(30);}
+        }
+    }
+    .swiper-slide{
+        .item{
+            .disco-image{width:273px;height:273px;filter:blur(3px);transition:all 0.3s ease;border-radius: 3px;transform: scale(0.91);}
+            .disco-title{@include font(38,51,$font-family--main);color:$color--gray;font-weight: 600;}
+            .disco-year{@include font(12,18,$font-family--main);font-weight: 600;color:$color--gray;margin-top: rem(4);}
+            .disco-desc{@include font(16,24,$font-family--main);font-weight: 400;color:$color--gray;margin-top: rem(22);}
+        }
+
+        &.swiper-slide-active{
+            .disco-image{filter: blur(0px);transform: scale(1);}
+        }
+    }
+
+    .info-slider-wrapper{margin-top: rem(47);}
+
+    .slider-controller{justify-content: center;margin-top: rem(42);
+        .fa-long-arrow-alt-left{width: rem(50);}
+        .fa-long-arrow-alt-right{width: rem(50);}
+    }
+}

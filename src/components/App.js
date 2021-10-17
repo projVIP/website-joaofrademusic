@@ -6,6 +6,7 @@ import Banner from './homepage/Banner';
 import GetDataFunctions from '../scripts/GetDataFunctions';
 import { DataContext } from '../scripts/Context';
 import About from './homepage/About';
+import Discografia from './homepage/Discografia';
 
 const fetchData = async () => {
   let dataFetched = await GetDataFunctions.fetchData;
@@ -35,6 +36,7 @@ function App() {
           <Navbar linkOnClick={navOnClick} />
           <Banner />
           <About />
+          <Discografia />
         </div>
       </DataContext.Provider>
     );

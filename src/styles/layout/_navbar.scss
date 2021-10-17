@@ -6,7 +6,7 @@
     .nav-list{margin-left: auto;display: flex;flex-direction: row;
         li{list-style: none;padding: 0px 17px;display:flex;align-items:center;
             a{font-size: 12px;line-height: 18px;font-family: 'Open Sans',sans-serif;color:#F8F9FA;text-decoration: none;text-transform: uppercase;height:rem(30);display:flex;border-bottom:rem(5) solid transparent;transition:all 0.3s ease;
-                &:hover{border-color:$blue--bg;}
+                &:hover{border-color:$bg--blue;}
             }
         }
     }

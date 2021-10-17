@@ -78,18 +78,73 @@
     "image2": "/assets/about/image2.jpg",
     "image3": "/assets/about/image3.jpg"
   },
-  "discografia": {
-    "discoImg": "/src/assets/disco1.jpg",
-    "discoLink": "",
-    "discoTitle": "",
-    "discoYear": "",
-    "discoDesc": ""
-  },
+  "discografia": [
+    {
+      "discoImg": "/assets/discografia/disco1.jpg",
+      "discoLink": "https://www.google.pt",
+      "discoTitle": "Titulo 1",
+      "discoYear": "2021",
+      "discoDesc": "Lorem Ipsum 1"
+    },
+    {
+      "discoImg": "/assets/discografia/disco2.jpg",
+      "discoLink": "https://www.youtube.pt",
+      "discoTitle": "Titulo 2",
+      "discoYear": "2020",
+      "discoDesc": "Lorem Ipsum 2"
+    },
+    {
+      "discoImg": "/assets/discografia/disco3.jpg",
+      "discoLink": "https://www.soundcloud.com",
+      "discoTitle": "Titulo 3",
+      "discoYear": "2019",
+      "discoDesc": "Lorem Ipsum 3"
+    },
+    {
+      "discoImg": "/assets/discografia/disco4.jpg",
+      "discoLink": "https://www.bandcamp.com",
+      "discoTitle": "Titulo 4",
+      "discoYear": "2018",
+      "discoDesc": "Lorem Ipsum 4"
+    },
+    {
+      "discoImg": "/assets/discografia/disco4.jpg",
+      "discoLink": "https://www.bandcamp.com",
+      "discoTitle": "Titulo 4",
+      "discoYear": "2018",
+      "discoDesc": "Lorem Ipsum 4"
+    }
+  ],
   "evento": [
     {
-      "eventoTitle": "",
-      "eventoDate": "",
-      "eventoLocal": ""
+      "eventoDate": "Tuesday 19 oct, 2021",
+      "eventoTitle": "Manuel de Oliveira \"Entre-Lugar\" ",
+      "eventoLocal": "Lisbon, Portugal"
+    },
+    {
+      "eventoDate": "Friday 22 oct, 2021",
+      "eventoTitle": "Manuel de Oliveira \"Entre-Lugar\" ",
+      "eventoLocal": "Braga, Portugal"
+    },
+    {
+      "eventoDate": "Saturday 30 oct, 2021",
+      "eventoTitle": "Mariza",
+      "eventoLocal": "Instambul, Turkey"
+    },
+    {
+      "eventoDate": "Thursday 4 nov, 2021",
+      "eventoTitle": "Joana Guerra",
+      "eventoLocal": "Torres Vedras, Portugal"
+    },
+    {
+      "eventoDate": "Saturday 13 nov, 2021",
+      "eventoTitle": "Mariza",
+      "eventoLocal": "Hannover, Germany "
+    },
+    {
+      "eventoDate": "Monday 15 nov, 2021",
+      "eventoTitle": "Mariza",
+      "eventoLocal": "Hannover, Germany "
     }
   ],
   "galeria": [
