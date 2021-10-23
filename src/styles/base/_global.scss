@@ -4,3 +4,13 @@
 a{text-decoration: none;}
 body{background:$bg--lavender;overflow-x: hidden;}
 section{max-width: 100%;}
+
+#presskits{padding-top: rem(19);padding-bottom:rem(19);display:flex;width:100%;justify-content:center;align-items:center;
+    .dl-btn{align-items: center;margin:0 rem(32);display:flex;align-items:center;
+        .dl-text{@include font(12,18,$font-family--main);color:$color--gray;margin-right:rem(16);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    }
+}

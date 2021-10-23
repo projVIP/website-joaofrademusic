@@ -7,6 +7,9 @@ import GetDataFunctions from '../scripts/GetDataFunctions';
 import { DataContext } from '../scripts/Context';
 import About from './homepage/About';
 import Discografia from './homepage/Discografia';
+import Events from './homepage/Events';
+import PressKits from './homepage/PressKits';
+import Projects from './homepage/Projects';
 
 const fetchData = async () => {
   let dataFetched = await GetDataFunctions.fetchData;
@@ -37,6 +40,9 @@ function App() {
           <Banner />
           <About />
           <Discografia />
+          <Events />
+          <PressKits />
+          <Projects />
         </div>
       </DataContext.Provider>
     );

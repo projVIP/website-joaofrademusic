@@ -66,16 +66,16 @@ function Discografia(props) {
                     onSlideChange={changeFirstSwiper}
                     centeredSlides={true}
                     navigation={{
-                        prevEl: '.fa-long-arrow-alt-left',
-                        nextEl: '.fa-long-arrow-alt-right',
+                        prevEl: '.prev-album',
+                        nextEl: '.next-album',
                     }}
                 >
                     {secondSlideContent}
 
                     <div className="slider-controller">
-                        <span className="fas fa-long-arrow-alt-left"></span>
+                        <span className="fas fa-long-arrow-alt-left prev-album"></span>
                         <span>{currentSlideIndex}/{data.discografia.length}</span>
-                        <span className="fas fa-long-arrow-alt-right"></span>
+                        <span className="fas fa-long-arrow-alt-right next-album"></span>
                     </div>
                 </Swiper>
             </div>

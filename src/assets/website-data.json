@@ -115,9 +115,9 @@
       "discoDesc": "Lorem Ipsum 4"
     }
   ],
-  "evento": [
+  "eventos": [
     {
-      "eventoDate": "Tuesday 19 oct, 2021",
+      "eventoDate": "Tuesday 18 oct, 2021",
       "eventoTitle": "Manuel de Oliveira \"Entre-Lugar\" ",
       "eventoLocal": "Lisbon, Portugal"
     },
@@ -149,30 +149,38 @@
   ],
   "galeria": [
     {
-      "img": ""
+      "ImageVideo": "/assets/gallery/gallery1.jpg",
+      "galleryImageVideo": "/assets/gallery/gallery1.jpg"
     },
     {
-      "img": ""
+      "ImageVideo": "/assets/gallery/gallery2.jpg",
+      "galleryImageVideo": "/assets/gallery/gallery2.jpg"
     },
     {
-      "img": ""
+      "ImageVideo": "/assets/gallery/gallery3.jpg",
+      "galleryImageVideo": "/assets/gallery/gallery3.jpg"
     },
     {
-      "img": ""
-    },
-    {
-      "img": ""
+      "ImageVideo": "/assets/gallery/gallery1.jpg",
+      "galleryImageVideo": "https://www.youtube.com/watch?v=LXb3EKWsInQ"
     }
   ],
-  "projects": [
-    {
-      "projectTitle": "",
-      "projectYear": "",
-      "projectDesc": "",
-      "projectLink": "",
-      "projectImage": ""
-    }
-  ],
+  "presskits": {
+    "en": "/assets/gallery/gallery1.jpg",
+    "pt": "/assets/gallery/gallery1.jpg"
+  },
+  "projects": {
+    "title": "Current Projects",
+    "projectList": [
+      {
+        "projectTitle": "Solo . Interior - Reflexo",
+        "projectYear": "2021",
+        "projectDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor velit in neque turpis ut. Eu sed amet ornare aenean ante id nulla. Fames ultrices pellentesque risus at mauris vel netus. Tempus sit morbi.",
+        "projectLink": "https://www.google.pt",
+        "projectImage": "/assets/projects/project1.jpg"
+      }
+    ]
+  },
   "quotes": {
     "text": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
   },
