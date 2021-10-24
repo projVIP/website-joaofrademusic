@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { DataContext } from '../../scripts/Context';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, {Navigation} from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
@@ -31,11 +32,21 @@ const Projects = () => {
             <Swiper
                 slidesPerView={1}
                 onSlideChange={(e) => { setcurrentSlideIndex(e.realIndex + 1); }}
+                navigation={{
+                    prevEl: '.prev-project',
+                    nextEl: '.next-project',
+                }}
             >
                 {renderEventsSlider}
+
+                <div className="slider-controller">
+                            <span className="fas fa-long-arrow-alt-left prev-project"></span>
+                            <span className="slide-number">{currentSlideIndex}/{data.projects.projectList.length}</span>
+                            <span className="fas fa-long-arrow-alt-right next-project"></span>
+                        </div>
             </Swiper>
 
-            <div className="teste"></div>
+            <div className="mask"></div>
         </section>
     )
 }

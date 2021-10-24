@@ -1,0 +1,14 @@
+@import "../abstracts/index";
+
+#contacts{background: #373E82;height: rem(101);position: relative;
+    .contacts-wrapper{width: rem(531);height: rem(193);background: $bg--blue;border-radius: 8px;position: absolute;margin-top: rem(-142);left: 50%;transform: translateX(-50%);text-align:left;
+        .title{@include font(28,38,$font-family--main);color: $color--light;padding-top: rem(12);padding-bottom: rem(28);text-align: center;}
+        .text-content{display: flex;justify-content:center;
+            .email-wrapper{display: inline;}
+            .mobile-text{@include font(15,18,$font-family--main);color: $color--light-opacity;text-transform: uppercase;margin-right: rem(5);}
+            .mobile-content{@include font(15,18,$font-family--main);color:$color--light;}
+            .email-text{@include font(15,18,$font-family--main);color: $color--light-opacity;text-transform: uppercase;margin-left: rem(32);margin-right: rem(5);}
+            .email-content{@include font(15,18,$font-family--main);color:$color--light;}
+        }
+    }
+}

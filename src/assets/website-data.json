@@ -178,13 +178,25 @@
         "projectDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor velit in neque turpis ut. Eu sed amet ornare aenean ante id nulla. Fames ultrices pellentesque risus at mauris vel netus. Tempus sit morbi.",
         "projectLink": "https://www.google.pt",
         "projectImage": "/assets/projects/project1.jpg"
+      },
+      {
+        "projectTitle": "Solo . Interior - Reflexo",
+        "projectYear": "2021",
+        "projectDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor velit in neque turpis ut. Eu sed amet ornare aenean ante id nulla. Fames ultrices pellentesque risus at mauris vel netus. Tempus sit morbi.",
+        "projectLink": "https://www.google.pt",
+        "projectImage": "/assets/projects/project1.jpg"
       }
     ]
   },
   "quotes": {
-    "text": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
+    "title": "A unique and special musician who says that",
+    "text": "A unique and special musician who says that"
   },
   "contacts": {
-    "contactPhone": ""
+    "contactPhone": "(+351) 963 840 453",
+    "contactEmails": [
+      {"email": "info@joaofrademusic.com"},
+      {"email": "geral@alg-eventos.pt"}
+    ]
   }
 }

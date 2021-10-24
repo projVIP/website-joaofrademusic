@@ -10,6 +10,8 @@ import Discografia from './homepage/Discografia';
 import Events from './homepage/Events';
 import PressKits from './homepage/PressKits';
 import Projects from './homepage/Projects';
+import Quotes from './homepage/Quotes';
+import Contacts from './homepage/Contacts';
 
 const fetchData = async () => {
   let dataFetched = await GetDataFunctions.fetchData;
@@ -43,6 +45,8 @@ function App() {
           <Events />
           <PressKits />
           <Projects />
+          <Quotes />
+          <Contacts />
         </div>
       </DataContext.Provider>
     );

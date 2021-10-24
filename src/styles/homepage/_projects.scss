@@ -14,4 +14,10 @@
             .item-link{display:flex;margin:0 auto;width:rem(115);height:rem(27);align-items: center;justify-content: center;border: 1px solid $color--light;@include font(12,18,$font-family--main);color:$color--light;border-radius: rem(100);background: $color--light-opacity;}
         }
     }
+
+    .slider-controller{position: absolute;bottom: rem(90);left: 50%;transform: translateX(-50%);z-index: 9;color:$color--light;
+        .slide-number{@include font(12,18,$font-family--main);margin:0 rem(16);}
+    }
+
+    .mask{background-image: url('../../assets/png/mask.png');position: absolute;bottom: 0;width: 100%;height: rem(100);z-index: 9;}
 }
