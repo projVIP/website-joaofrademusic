@@ -1,7 +1,7 @@
 #navbar{
-    display:flex;height: 105px;width:100%;position:absolute;background:transparent;top:0;align-items:center;z-index: 1;
+    display:flex;height: rem(50);width:100%;position:absolute;background:transparent;top:0;align-items:center;z-index: 1;padding-top:rem(20);
     .logo-wrapper{
-        img{height:75px;}
+        img{height:45px;}
     }
     .nav-list{margin-left: auto;display: flex;flex-direction: row;
         li{list-style: none;padding: 0px 17px;display:flex;align-items:center;
@@ -9,5 +9,21 @@
                 &:hover{border-color:$bg--blue;}
             }
         }
+    }
+
+    .desktop-nav{display: none;}
+    .mobile-nav{display: flex;margin-left: auto;
+        .open-drawer-btn{color:$color--light;font-size: rem(14);display: flex;align-items: center;}
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #navbar{height: rem(108);
+        .logo-wrapper{
+            img{height:rem(75);}
+        }
+
+        .desktop-nav{display: flex;}
+        .mobile-nav{display: none;}
     }
 }

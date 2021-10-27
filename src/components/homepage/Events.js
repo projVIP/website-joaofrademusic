@@ -62,7 +62,7 @@ function Events(props) {
                 <div className="w-50 events-wrapper">
                     <div className="events-list">
                         <span className="section-title">Upcoming Events</span>
-                        <div className="events-wrapper">
+                        <div>
                             {renderEvents.length > 0 ? renderEvents : <span className="no-events">There are no upcoming events at the moment</span>}
                         </div>
                     </div>

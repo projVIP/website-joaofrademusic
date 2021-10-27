@@ -3,7 +3,7 @@
 #mod-discografia{margin-bottom: rem(55);margin-top: rem(-204);
     .custom-container{
         .swiper-slide{
-            .item{margin-right: rem(30);}
+            .item{margin-right: 0;}
         }
     }
     .swiper-slide{
@@ -24,5 +24,15 @@
     .slider-controller{justify-content: center;margin-top: rem(42);
         .fa-long-arrow-alt-left{width: rem(50);}
         .fa-long-arrow-alt-right{width: rem(50);}
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #mod-discografia{
+        .custom-container{
+            .swiper-slide{
+                .item{margin-right: rem(30);}
+            }
+        }
     }
 }

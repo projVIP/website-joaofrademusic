@@ -53,8 +53,19 @@ function Discografia(props) {
         <section id="mod-discografia">
             <div className="custom-container">
                 <Swiper
-                    slidesPerView={4}
+                    slidesPerView={1}
                     onSwiper={setFirstSwiper}
+                    breakpoints= {
+                        {"576": {
+                            "slidesPerView": 2
+                        },
+                        "992": {
+                            "slidesPerView": 3
+                        },
+                        "1200": {
+                            "slidesPerView": 4
+                        }}
+                    }
                 >
                     {firstSlideContent}
                 </Swiper>
