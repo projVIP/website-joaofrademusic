@@ -1,11 +1,12 @@
 import { useContext, useState } from 'react';
 import { DataContext } from '../../scripts/Context';
-import SwiperCore, {Navigation} from 'swiper';
+import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 import FsLightbox from 'fslightbox-react';
+import arrow from '../../assets/svg/left_light.svg';
 
 SwiperCore.use([Navigation]);
 
@@ -70,7 +71,7 @@ function Events(props) {
                 <div className="w-50 gallery-wrapper">
                     <Swiper
                         slidesPerView={1}
-                        onSlideChange={(e) => {setcurrentSlideIndex(e.realIndex + 1);}}
+                        onSlideChange={(e) => { setcurrentSlideIndex(e.realIndex + 1); }}
                         centeredSlides={true}
                         navigation={{
                             prevEl: '.prev-event',
@@ -80,9 +81,9 @@ function Events(props) {
                         {renderGallery}
 
                         <div className="slider-controller">
-                            <span className="fas fa-long-arrow-alt-left prev-event"></span>
-                            <span>{currentSlideIndex}/{data.galeria.length}</span>
-                            <span className="fas fa-long-arrow-alt-right next-event"></span>
+                            <img src={arrow} className="left prev-event" />
+                            <span className="slide-number">{currentSlideIndex}/{data.galeria.length}</span>
+                            <img src={arrow} className="right next-event" />
                         </div>
                     </Swiper>
                 </div>

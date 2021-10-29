@@ -3,9 +3,10 @@
     .logo-wrapper{
         img{height:45px;}
     }
+    .custom-container{width: 100%;}
     .nav-list{margin-left: auto;display: flex;flex-direction: row;
         li{list-style: none;padding: 0px 17px;display:flex;align-items:center;
-            a{font-size: 12px;line-height: 18px;font-family: 'Open Sans',sans-serif;color:#F8F9FA;text-decoration: none;text-transform: uppercase;height:rem(30);display:flex;border-bottom:rem(5) solid transparent;transition:all 0.3s ease;
+            a{font-size: 12px;line-height: 18px;font-family: 'Open Sans',sans-serif;color:#F8F9FA;text-decoration: none;text-transform: uppercase;height:rem(30);display:flex;border-bottom:rem(5) solid transparent;transition:all 0.3s ease;align-items:center;
                 &:hover{border-color:$bg--blue;}
             }
         }
@@ -14,6 +15,11 @@
     .desktop-nav{display: none;}
     .mobile-nav{display: flex;margin-left: auto;
         .open-drawer-btn{color:$color--light;font-size: rem(14);display: flex;align-items: center;}
+    }
+
+    .language-wrapper{display: flex;align-items: center;
+        .MuiSvgIcon-root{color:$color--light;}
+        .MuiOutlinedInput-notchedOutline{border: none;}
     }
 }
 

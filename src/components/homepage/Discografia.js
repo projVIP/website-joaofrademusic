@@ -7,7 +7,8 @@ import SwiperCore, {
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
-import 'swiper/components/navigation/navigation.min.css'
+import 'swiper/components/navigation/navigation.min.css';
+import arrow from '../../assets/svg/left.svg';
 
 SwiperCore.use([Navigation]);
 
@@ -84,9 +85,9 @@ function Discografia(props) {
                     {secondSlideContent}
 
                     <div className="slider-controller">
-                        <span className="fas fa-long-arrow-alt-left prev-album"></span>
+                        <img src={arrow} className="left prev-album" />
                         <span>{currentSlideIndex}/{data.discografia.length}</span>
-                        <span className="fas fa-long-arrow-alt-right next-album"></span>
+                        <img src={arrow} className="right next-album" />
                     </div>
                 </Swiper>
             </div>

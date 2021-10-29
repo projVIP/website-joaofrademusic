@@ -15,8 +15,10 @@
         }
     }
 
-    .slider-controller{position: absolute;bottom: rem(90);left: 50%;transform: translateX(-50%);z-index: 9;color:$color--light;
-        .slide-number{@include font(12,18,$font-family--main);margin:0 rem(16);}
+    .slider-controller{position: absolute;bottom: rem(90);left: 50%;transform: translateX(-50%);z-index: 9;color:$color--light;display:flex;justify-content:center;align-items:center;
+        .slide-number{@include font(12,18,$font-family--main);}
+        .left{padding-right: rem(16);display: block;}
+        .right{transform: rotate(180deg);padding-right: rem(16);display: block;}
     }
 
     .mask{background-image: url('../../assets/png/mask.png');position: absolute;bottom: 0;width: 100%;height: rem(100);z-index: 9;}

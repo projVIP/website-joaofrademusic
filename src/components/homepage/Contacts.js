@@ -10,9 +10,8 @@ const Contacts = () => {
     })
 
     const renderEmails = data.contacts.contactEmails.map((value, index) => {
-        console.log(index);
         return (
-            <div className="email-content">{value.email}</div>
+            <div className="email-content" key={index}>{value.email}</div>
         )
     })
 

@@ -22,7 +22,11 @@
             }
         }
 
-        .slider-controller{position: absolute;z-index: 9;bottom: rem(19);left:50%;transform: translateX(-50%);}
+        .slider-controller{position: absolute;z-index: 9;bottom: rem(19);left:50%;transform: translateX(-50%);display:flex;align-items:center;justify-content:center;
+            .slide-number{@include font(12,18,$font-family--main);color:$color--light;}
+            .left{padding-right: rem(16);display: block;}
+            .right{transform: rotate(180deg);padding-right: rem(16);display: block;}
+        }
     }
 
     .no-events{@include font(16,24,$font-family--main);color:$color--light;margin-left: auto;text-align: left;}

@@ -1,10 +1,11 @@
 import { useContext, useState } from 'react';
 import { DataContext } from '../../scripts/Context';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Navigation} from 'swiper';
+import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
+import arrow from '../../assets/svg/left_light.svg';
 
 const Projects = () => {
     const data = useContext(DataContext);
@@ -17,7 +18,7 @@ const Projects = () => {
                     <div className="overlay">
                         <div className="item-title">{value.projectTitle}</div>
                         <div className="item-year">{value.projectYear}</div>
-                        <div className="item-desc" dangerouslySetInnerHTML={{__html: value.projectDesc}}></div>
+                        <div className="item-desc" dangerouslySetInnerHTML={{ __html: value.projectDesc }}></div>
                         <a className="item-link" href={value.projectLink} target="_blank">Listen Here</a>
                     </div>
                 </div>
@@ -40,10 +41,10 @@ const Projects = () => {
                 {renderEventsSlider}
 
                 <div className="slider-controller">
-                            <span className="fas fa-long-arrow-alt-left prev-project"></span>
-                            <span className="slide-number">{currentSlideIndex}/{data.projects.projectList.length}</span>
-                            <span className="fas fa-long-arrow-alt-right next-project"></span>
-                        </div>
+                    <img src={arrow} className="left prev-project" />
+                    <span className="slide-number">{currentSlideIndex}/{data.projects.projectList.length}</span>
+                    <img src={arrow} className="right next-project" />
+                </div>
             </Swiper>
 
             <div className="mask"></div>

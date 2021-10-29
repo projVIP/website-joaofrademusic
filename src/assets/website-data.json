@@ -38,21 +38,21 @@
       "navLinkContent": "TOUR",
       "navLinkSettings": {
         "title": "Check Tour Dates",
-        "href": "#tour"
+        "href": "#events"
       }
     },
     {
       "navLinkContent": "PRESS KIT",
       "navLinkSettings": {
         "title": "See Press Kit",
-        "href": "#presskit"
+        "href": "#presskits"
       }
     },
     {
       "navLinkContent": "CURRENT PROJECTS",
       "navLinkSettings": {
         "title": "Check my Current Projects",
-        "href": "#currentProjects"
+        "href": "#projects"
       }
     },
     {

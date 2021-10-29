@@ -15,6 +15,14 @@
     }
 }
 
+.MuiBox-root{position:absolute;width: calc(100% - 112px);left:50%;top:50%;transform: translate(-50%, -50%);background: $color--light;padding:rem(50);overflow: hidden;
+    .about-modal-title{@include font(28,38,$font-family--main);margin-bottom: rem(56);text-align: center;color:$color--blue;}
+    .about-modal-description{@include font(16,24,$font-family--main);color:$color--gray;text-align: left;max-height: 70vh;overflow-y: scroll;padding-right:rem(15);
+        &::-webkit-scrollbar{width: rem(4);}
+        &::-webkit-scrollbar-thumb{background: $color--blue;}
+    }
+}
+
 @media screen and (min-width: 576px) {
     #about{
         .about-photos{

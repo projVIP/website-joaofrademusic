@@ -21,9 +21,10 @@
 
     .info-slider-wrapper{margin-top: rem(47);}
 
-    .slider-controller{justify-content: center;margin-top: rem(42);
-        .fa-long-arrow-alt-left{width: rem(50);}
-        .fa-long-arrow-alt-right{width: rem(50);}
+    .slider-controller{justify-content: center;margin-top: rem(42);display:flex;align-items:center;
+        .slide-number{@include font(12,18,$font-family--main);}
+        .left{padding-right: rem(16);display: block;}
+        .right{transform: rotate(180deg);padding-right: rem(16);display: block;}
     }
 }
 

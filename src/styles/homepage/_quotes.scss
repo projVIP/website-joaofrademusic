@@ -3,7 +3,8 @@
 #quotes {
     padding-top: rem(44);
     background: #fff;
-    padding-bottom: rem(196);
+    padding-bottom: rem(44);
+    overflow: hidden;
     .title {
         @include font(12, 18, $font-family--main);
         color: #868e96;
@@ -11,8 +12,8 @@
         padding-bottom: rem(30);
     }
     .marquee {
-        @include font(38,51,$font-family--main);
-        color:#868E96;
+        @include font(24, 34, $font-family--main);
+        color: #868e96;
         text-align: left;
         -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);
@@ -24,6 +25,23 @@
     .delay {
         margin-top: rem(-10);
         animation-delay: 5s;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #quotes{
+        .title{@include font(16,20,$font-family--main);}
+        .marquee{
+            @include font(28,38,$font-family--main);
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    #quotes{
+        padding-bottom: rem(196);
+        .marquee{
+            @include font(38,51,$font-family--main);
+        }
     }
 }
 

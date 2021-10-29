@@ -1,5 +1,5 @@
 @import "../abstracts/index";
-
+*{box-sizing: border-box;}
 .custom-container{display:flex;width:auto;max-width: none;margin:0 auto;padding: 0 rem(20);}
 a{text-decoration: none;}
 body{background:$bg--lavender;overflow-x: hidden;}
@@ -13,6 +13,23 @@ section{max-width: 100%;}
         }
     }
     }
+}
+
+.MuiModal-root{
+    .MuiDrawer-paperAnchorRight{background: $bg--blue;
+        .nav-list{padding: 0 rem(20);
+            .nav-li{list-style: none;padding-bottom:rem(8);
+                a{@include font(16,18,$font-family--main);color:$color--light;}
+            }
+        }
+    }
+}
+
+.MuiPaper-root{
+    .MuiMenuItem-root{transition: all 0.3s ease;@include font(14,22,$font-family--main);
+        &:hover{background: $bg--blue;color: $color--light;}
+    }
+    .Mui-focusVisible{background: $bg--blue !important;color:$color--light !important;}
 }
 
 @media screen and (min-width: 1200px) {
