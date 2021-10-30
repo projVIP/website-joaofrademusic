@@ -11,10 +11,14 @@
     />
     <link rel="manifest" href="/manifest.json" />
     <script src="https://kit.fontawesome.com/b973c92ce3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <title>João Frade Music</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="google_translate_element"></div>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -26,5 +30,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'pt'}, 'lang-select');
+      }
+      </script>
   </body>
 </html>

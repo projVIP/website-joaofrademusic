@@ -32,6 +32,9 @@ section{max-width: 100%;}
     .Mui-focusVisible{background: $bg--blue !important;color:$color--light !important;}
 }
 
+.goog-te-gadget{display:none !important;}
+.skiptranslate select{display: none !important;}
+
 @media screen and (min-width: 1200px) {
     .custom-container{display:flex;width:100%;max-width: rem(1136);margin:0 auto;padding: 0;}
 }

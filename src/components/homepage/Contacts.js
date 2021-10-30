@@ -11,7 +11,7 @@ const Contacts = () => {
 
     const renderEmails = data.contacts.contactEmails.map((value, index) => {
         return (
-            <div className="email-content" key={index}>{value.email}</div>
+            <a className="email-content" key={index} href={"mailto:" + value.email}>{value.email}</a>
         )
     })
 
@@ -21,7 +21,7 @@ const Contacts = () => {
                 <div className="title">Contacts</div>
                 <div className="text-content">
                 <span className="mobile-text">Mobile:</span>
-                <span className="mobile-content">{data.contacts.contactPhone}</span>
+                <a className="mobile-content" href={"tel:" + data.contacts.contactPhone}>{data.contacts.contactPhone}</a>
                 <span className="email-text">Email:</span>
                 <div className="email-wrapper">
                     {renderEmails}
