@@ -28,6 +28,7 @@ const Contacts = () => {
                 </div>
                 </div>
             </div>
+            <div className="contacts-lower"></div>
         </section>
     )
 }

@@ -14,7 +14,7 @@ function About() {
                     <div className="about-text-wrapper">
                         <span className="about-title">{data.aboutInfo.title}</span>
                         <div className="about-description" dangerouslySetInnerHTML={{ __html: data.aboutInfo.description }}></div>
-                        <a className="read-more" title="Read More" onClick={() => setModalOpen(true)}>Read More</a>
+                        <a className="read-more main-btn" title="Read More" onClick={() => setModalOpen(true)}>Read More</a>
                         <Modal
                             open={modalOpen}
                             onClose={() => setModalOpen(false)}
@@ -28,9 +28,9 @@ function About() {
                         </Modal>
                     </div>
                     <div className="about-photos">
-                        <img className="img-1" src={data.aboutInfo.image1} alt="Image 1" />
-                        <img className="img-2" src={data.aboutInfo.image2} alt="Image 2" />
-                        <img className="img-3" src={data.aboutInfo.image3} alt="Image 3" />
+                        <div className="img-1" style={{ backgroundImage: "url(" + data.aboutInfo.image1 + ")" }}></div>
+                        <div className="img-2" style={{ backgroundImage: "url(" + data.aboutInfo.image2 + ")" }}></div>
+                        <div className="img-3" style={{ backgroundImage: "url(" + data.aboutInfo.image3 + ")" }}></div>
                     </div>
                 </div>
             </div>

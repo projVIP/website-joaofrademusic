@@ -28,7 +28,7 @@
   ],
   "navbar": [
     {
-      "navLinkContent": "ABOUT",
+      "navLinkContent": "SOBRE",
       "navLinkSettings": {
         "title": "Go to About",
         "href": "#about"
@@ -49,14 +49,14 @@
       }
     },
     {
-      "navLinkContent": "CURRENT PROJECTS",
+      "navLinkContent": "PROJECTOS",
       "navLinkSettings": {
         "title": "Check my Current Projects",
         "href": "#projects"
       }
     },
     {
-      "navLinkContent": "Contacts",
+      "navLinkContent": "CONTACTOS",
       "navLinkSettings": {
         "title": "Contacts",
         "href": "#contacts"
@@ -64,15 +64,15 @@
     }
   ],
   "banner": {
-    "bannerTitle": "Last ReleaseLast ReleaseLast Release",
+    "bannerTitle": "Último Lançamento",
     "bannerBtn": {
-      "title": "Listen here",
+      "title": "Ouvir",
       "link": "/"
     },
     "bannerImg": "/assets/banner/banner.jpg"
   },
   "aboutInfo": {
-    "title": "About",
+    "title": "Sobre",
     "description": "João Frade nasceu em abril de 1983 em Albufeira.\nDesde tenra idade que demonstrou uma enorme aptidão e sensibilidade musical levando a que tivesse ingressado na escola ETAC a cargo do professor Hermenegildo Guerreiro.\nDurante esse período foi galardoado com inúmeros prémios a nível nacional e internacional, participando nos mais variados eventos artísticos.\nNo ano de 2002 ingressa no CNIMA em França, um dos mais prestigiados centros especializados no ensino de acordeão em todo o mundo, onde tem a oportunidade de contactar com músicos de todo o mundo e onde na sequência vence os mais importantes prémios a nível mundial como a Coupe Mondiale, Trophé Mondiale e o prémio internacional de Castelfidardo, o músico conta ainda com distinções como o prémio Terras de Loulé, Primus Inter-Pares e ainda a medalha de mérito “grau ouro” do município de Albufeira.\nDe regresso a Portugal começa a desenvolver projectos próprios e a trabalhar como Side man, compositor, arranjador e produtor.\nEm 2009 começa a frequentar a licenciatura “ramo” jazz na escola superior de música de Lisboa.\nApós este período torna-se um dos músicos mais requisitados da cena musical portuguesa e não só, nomes como Mariza, Maria João Mário Laginha, Pedro Jóia, Jorge Pardo, Carles Benavent, Alain Peréz, Mayra Andrade, Lura, Adiafa, Luis Represas, Munir Hossn, Ney Matogrosso, Munir Hossn, Roberto Mendes, Dino d´Santiago, Flora Purim e Airto Moreira, Eduardo Paim, Johan Zachrisson, Carminho, Maui\nRamirez, Sandra Carrasco, Nuno Guerreiro, Susana\nTravassos, Diego Guerrero, Marenostrum, Anne Carrére, Manuel de Oliveira, Oquestrada entre tantos outros…\nGrava e Lança o seu primeiro disco em duo com o prestigiado multi-instrumentista Munir Hossn em 2013 o qual se intitula “piriquitos e botonetes” fruto de um trabalho de pesquisa e criação de uma nova visão musical sobre a musica do sul de Portugal e a Chula do Recôncavo Baiano no Brasil.\nA partir desta fase João Frade começa a redirecionar o seu foco para uma forma mais pessoal de pensar e estar na música, a qual começou a designar de “Música Portuguesa Criativa” e consiste numa fusão de ritmos tradicionais das regiões mais a sul do país e não só, com melodias e ritmos do mediterrâneo juntamente com o jazz norte americano e a World Music.\nRecentemente lançou o seu disco “homónimo” em\ncolaboração com os artistas Michael Olivera e Munir Hossn, produzido por este ultimo, o disco solo “Solilóquio” e o recém gravado dueto com o Violinista João Silva o qual irá ser lançado durante o ano de 2021 intitulado “Lugares”.\nParalelamente têm participado activamente e desenvolvido os projectos Moda Vestra, Pedro Jóia Trio, Manuel de Oliveira “Entre” e “Ibéria”, “Deux Accordéons une Voix”, Marenostrum, e João Frade & Aenigmaticus Orchestra, sendo também músico residente na banda da artista Mariza.\nTêm se apresentado um pouco por todo o mundo nos mais prestigiados palcos em países como, Estados Unidos, Canadá, Rússia, Suécia, Noruega, Alemanha, Finlândia, Roménia, Itália, Brasil, Dinamarca, China, Letónia, Lituânia, Polónia, Angola etc…\nJoão Frade tem se revelado um dos músicos mais ecléticos e criativo da cena musical Portuguesa, demonstrando uma enorme inquietação criativa e sempre na busca de novos horizontes.\n",
     "image1": "/assets/about/image1.jpg",
     "image2": "/assets/about/image2.jpg",
@@ -82,16 +82,16 @@
     {
       "discoImg": "/assets/discografia/disco1.jpg",
       "discoLink": "https://www.google.pt",
-      "discoTitle": "Titulo 1",
-      "discoYear": "2021",
-      "discoDesc": "Lorem Ipsum 1"
+      "discoTitle": "João Frade ",
+      "discoYear": "2018",
+      "discoDesc": "“João Frade” o álbum homónimo lançado em 2018 após o artista ter vivido pelo período de um ano na cidade de Madrid.\nDurante esse período, João Frade tocou inúmeras vezes com os incríveis artistas Munir Hossn e Michael Olivera. Fruto desses encontros e reencontros nasce este album que esteticamente tem uma orientação mais Latin/Fusion/Jazz e que tem como produtor executivo Munir Hossn e João Frade e Michael Olivera na co-produção.\nO Álbum conta ainda com a participação de incríveis músicos como Leo Genovese ou Ricardo Toscano…\n"
     },
     {
       "discoImg": "/assets/discografia/disco2.jpg",
       "discoLink": "https://www.youtube.pt",
-      "discoTitle": "Titulo 2",
-      "discoYear": "2020",
-      "discoDesc": "Lorem Ipsum 2"
+      "discoTitle": "Soliloquio",
+      "discoYear": "2019",
+      "discoDesc": "Trabalho nascido durante uma residência artística no centro Musibéria em Serpa e lançado em fevereiro de 2019.\nUma viagem ao imaginário musical do artista onde os melhores condimentos da cultura Ibérica se concentram e se fundem com elementos da world music e musica erudita.\n"
     },
     {
       "discoImg": "/assets/discografia/disco3.jpg",
@@ -117,52 +117,56 @@
   ],
   "eventos": [
     {
-      "eventoDate": "Tuesday 18 oct, 2021",
+      "eventoDate": "Terça-Feira 18 oct, 2021",
       "eventoTitle": "Manuel de Oliveira \"Entre-Lugar\" ",
       "eventoLocal": "Lisbon, Portugal"
     },
     {
-      "eventoDate": "Friday 22 oct, 2021",
+      "eventoDate": "Sexta-Feira 22 oct, 2021",
       "eventoTitle": "Manuel de Oliveira \"Entre-Lugar\" ",
       "eventoLocal": "Braga, Portugal"
     },
     {
-      "eventoDate": "Saturday 30 oct, 2021",
+      "eventoDate": "Sábado 30 oct, 2021",
       "eventoTitle": "Mariza",
-      "eventoLocal": "Instambul, Turkey"
+      "eventoLocal": "Instanbul, Turquia"
     },
     {
-      "eventoDate": "Thursday 4 nov, 2021",
+      "eventoDate": "Quinta-Feira 4 nov, 2021",
       "eventoTitle": "Joana Guerra",
       "eventoLocal": "Torres Vedras, Portugal"
     },
     {
-      "eventoDate": "Saturday 13 nov, 2021",
+      "eventoDate": "Sábado 13 nov, 2021",
       "eventoTitle": "Mariza",
-      "eventoLocal": "Hannover, Germany "
+      "eventoLocal": "Hannover, Alemanha "
     },
     {
-      "eventoDate": "Monday 15 nov, 2021",
+      "eventoDate": "Domingo 15 nov, 2021",
       "eventoTitle": "Mariza",
-      "eventoLocal": "Hannover, Germany "
+      "eventoLocal": "Hannover, Alemanha "
     }
   ],
   "galeria": [
     {
       "ImageVideo": "/assets/gallery/gallery1.jpg",
-      "galleryImageVideo": "/assets/gallery/gallery1.jpg"
+      "galleryImageVideo": "/assets/gallery/gallery1.jpg",
+      "isVideo": false
     },
     {
       "ImageVideo": "/assets/gallery/gallery2.jpg",
-      "galleryImageVideo": "/assets/gallery/gallery2.jpg"
+      "galleryImageVideo": "/assets/gallery/gallery2.jpg",
+      "isVideo": false
     },
     {
       "ImageVideo": "/assets/gallery/gallery3.jpg",
-      "galleryImageVideo": "/assets/gallery/gallery3.jpg"
+      "galleryImageVideo": "/assets/gallery/gallery3.jpg",
+      "isVideo": false
     },
     {
       "ImageVideo": "/assets/gallery/gallery1.jpg",
-      "galleryImageVideo": "https://www.youtube.com/watch?v=LXb3EKWsInQ"
+      "galleryImageVideo": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+      "isVideo": true
     }
   ],
   "presskits": {
@@ -170,7 +174,7 @@
     "pt": "/assets/gallery/gallery1.jpg"
   },
   "projects": {
-    "title": "Current Projects",
+    "title": "Projetos Atuais",
     "projectList": [
       {
         "projectTitle": "Solo . Interior - Reflexo",

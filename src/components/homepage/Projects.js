@@ -19,7 +19,7 @@ const Projects = () => {
                         <div className="item-title">{value.projectTitle}</div>
                         <div className="item-year">{value.projectYear}</div>
                         <div className="item-desc" dangerouslySetInnerHTML={{ __html: value.projectDesc }}></div>
-                        <a className="item-link" href={value.projectLink} target="_blank">Listen Here</a>
+                        <a className="item-link main-btn" href={value.projectLink} target="_blank">Listen Here</a>
                     </div>
                 </div>
             </SwiperSlide>

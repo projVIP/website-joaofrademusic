@@ -2,7 +2,8 @@ import logoImage from '../../assets/svg/logo.svg';
 import { useContext, useState } from 'react';
 import { DataContext } from '../../scripts/Context';
 import { Drawer, InputLabel, MenuItem, Select } from '@material-ui/core';
-import TranslateIcon from '@mui/icons-material/Translate';
+import PublicIcon from '@mui/icons-material/Public';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Navbar(props) {
     const data = useContext(DataContext);
@@ -13,7 +14,7 @@ function Navbar(props) {
         var keyValue = document['cookie'].match('(^|;) ?googtrans=([^;]*)(;|$)');
         return keyValue ? keyValue[2].split('/')[2] : null;
     }
-    
+
     const GTranslateFireEvent = (element, event) => {
         try {
             if (document.createEventObject) {
@@ -45,14 +46,6 @@ function Navbar(props) {
                 break;
             }
 
-        // if (document.getElementById('google_translate_element') == null || document.getElementById('google_translate_element').innerHTML.length == 0 || teCombo.length == 0 || teCombo.innerHTML.length == 0) {
-        //     setTimeout(function () {
-        //         doGTranslate(lang_pair)
-        //     }, 500)
-        // } else {
-        //     teCombo.value = lang;
-        //     GTranslateFireEvent(teCombo, 'change');
-        // }
         teCombo.value = lang;
         GTranslateFireEvent(teCombo, 'change');
     }
@@ -80,7 +73,7 @@ function Navbar(props) {
                         onChange={event => doGTranslate(event.target.value)}
                         displayEmpty={true}
                         renderValue={
-                            lang !== "" ? undefined : () => <TranslateIcon></TranslateIcon>
+                            lang !== "" ? undefined : () => <PublicIcon></PublicIcon>
                         }
                     >
                         <MenuItem value="pt|pt">PT</MenuItem>
@@ -93,6 +86,9 @@ function Navbar(props) {
                     <a className="open-drawer-btn" onClick={() => setDrawerOpen(true)}><span className="fas fa-bars"></span></a>
 
                     <Drawer anchor={'right'} open={drawerOpen} onClose={() => setDrawerOpen(false)} >
+                        <a className="close-icon" onClick={() => setDrawerOpen(false)}>
+                            <CloseIcon></CloseIcon>
+                        </a>
                         <ul className="nav-list">
                             {data.navbar.map((elem, index) => {
                                 return (

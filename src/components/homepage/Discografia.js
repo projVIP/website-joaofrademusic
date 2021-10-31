@@ -9,6 +9,7 @@ import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 import arrow from '../../assets/svg/left.svg';
+import play from '../../assets/svg/Vector.svg';
 
 SwiperCore.use([Navigation]);
 
@@ -22,7 +23,12 @@ function Discografia(props) {
         return (
             <SwiperSlide key={index}>
                 <a className="item" href={value.discoLink} target="_blank">
-                    <img data-link={value.discoLink} className="disco-image" src={value.discoImg} />
+                    <div className="item-wrapper">
+                        <img data-link={value.discoLink} className="disco-image" src={value.discoImg} />
+                        <div className="overlay">
+                            <img src={play} alt="play" />
+                        </div>
+                    </div>
                 </a>
             </SwiperSlide>
         )
@@ -52,27 +58,29 @@ function Discografia(props) {
 
     return (
         <section id="mod-discografia">
-            <div className="custom-container">
+            <div className="disco-slider-wrapper custom-container">
                 <Swiper
                     slidesPerView={1}
                     onSwiper={setFirstSwiper}
-                    breakpoints= {
-                        {"576": {
-                            "slidesPerView": 2
-                        },
-                        "992": {
-                            "slidesPerView": 3
-                        },
-                        "1200": {
-                            "slidesPerView": 4
-                        }}
+                    breakpoints={
+                        {
+                            "576": {
+                                "slidesPerView": 2
+                            },
+                            "992": {
+                                "slidesPerView": 3
+                            },
+                            "1200": {
+                                "slidesPerView": 4
+                            }
+                        }
                     }
                 >
                     {firstSlideContent}
                 </Swiper>
             </div>
 
-            <div className="info-slider-wrapper">
+            <div className="info-slider-wrapper custom-container">
                 <Swiper
                     slidesPerView={1}
                     onSlideChange={changeFirstSwiper}

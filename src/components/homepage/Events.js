@@ -7,6 +7,7 @@ import 'swiper/swiper.min.css';
 import 'swiper/components/navigation/navigation.min.css';
 import FsLightbox from 'fslightbox-react';
 import arrow from '../../assets/svg/left_light.svg';
+import play from '../../assets/svg/Vector.svg';
 
 SwiperCore.use([Navigation]);
 
@@ -44,10 +45,16 @@ function Events(props) {
     }
 
     const renderGallery = data.galeria.map((value, index) => {
+        console.log(value.isVideo);
         return (
             <SwiperSlide key={index}>
                 <div className="gallery-image" style={{ backgroundImage: "url(" + value.ImageVideo + ")" }}>
                     <a onClick={() => openLightBox(index + 1)} className="lightbox"></a>
+                    {value.isVideo == true &&
+                        <div className="overlay">
+                            <img src={play} alt="play" />
+                        </div>
+                    }
                 </div>
             </SwiperSlide>
         )

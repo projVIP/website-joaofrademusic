@@ -5,9 +5,9 @@
         .w-50{width:100%;}
         .section-title{@include font(24,32,$font-family--main);color:$color--light;text-align: left;margin-left: auto;display: flex;padding-bottom: rem(20);}
 
-        .event-item{text-align: left;padding-bottom:rem(9);border-bottom:1px solid $border--gray;padding-top:rem(9);
-            .event-date{@include font(12,18,$font-family--main);color:$color--light;}
-            .event-title{@include font(16,24,$font-family--main);color:$color--light;}
+        .event-item{text-align: left;padding-bottom:rem(9);border-bottom:1px solid $color--light-opacity;padding-top:rem(9);
+            .event-date{@include font(12,18,$font-family--main);color:$color--light;padding-bottom: rem(2);}
+            .event-title{@include font(16,24,$font-family--main);color:$color--light;padding-bottom: rem(3);}
             .event-local{@include font(12,18,$font-family--main);color:$color--light;}
         }
 
@@ -16,9 +16,10 @@
         }
 
         .gallery-wrapper{margin-top:rem(32);
-            .gallery-image{width:100%;height: rem(340);background-size: cover;background-position: center;filter:grayscale(1);transition:all 0.3s ease;
+            .gallery-image{width:100%;height: rem(340);background-size: cover;background-position: center;filter:grayscale(1);transition:all 0.3s ease;position: relative;
                 &:hover{filter: grayscale(0);}
                 .lightbox{display: flex;width: 100%;height: 100%;}
+                .overlay{position: absolute;top:0;left:0;width:100%;height:100%;background: rgba(0,0,0,0.1);transform: scale(0.91);display:flex;align-items:center;justify-content:center;}
             }
         }
 

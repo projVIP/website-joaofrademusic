@@ -4,7 +4,7 @@
     .banner-content{width:100%;height: rem(500);background-size: cover;background-repeat: no-repeat;display:flex;align-items:center;justify-content:center;background-position:center;
         .banner-text-wrapper{
             .banner-title{display: block;@include font(18,22,$font-family--main);color:$color--light}
-            .banner-link{display: flex;height:rem(38);width:rem(135);align-items: center;justify-content: center;background: $color--light-opacity;margin:0 auto;margin-top: rem(16);border-radius: 100px;@include font(13,16,$font-family--main);color:$color--light-opacity;border:1px solid $color--border-light;}
+            .banner-link{margin-top: rem(16);}
         }
     }
 
@@ -13,7 +13,7 @@
         .scroll-line{height: rem(50);margin-top: rem(17);width: rem(1);background: $color--light-opacity;margin-left: auto;margin-right: auto;}
     }
 
-    .banner-socialmedia{position:absolute;top:100%;left:rem(20);transform: translateY(-105%);
+    .banner-socialmedia{position:absolute;top:100%;right:rem(20);transform: translateY(-110%);
         .social-media-btn{display:block;margin-top: rem(8);}
     }
 }
@@ -29,6 +29,6 @@
 
         .scroll-btn{display: block;}
 
-        .banner-socialmedia{top:61%;transform: translateY(-61%);left:rem(32);}
+        .banner-socialmedia{top:63%;left:rem(32);right:auto;transform: translateY(0);}
     }
 }

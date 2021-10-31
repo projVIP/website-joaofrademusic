@@ -12,7 +12,7 @@
         padding-bottom: rem(30);
     }
     .marquee {
-        @include font(24, 34, $font-family--main);
+        @include font(18, 34, $font-family--main);
         color: #868e96;
         text-align: left;
         -moz-transform: translateX(100%);
@@ -21,6 +21,7 @@
         -moz-animation: scroll-left 10s linear infinite;
         -webkit-animation: scroll-left 10s linear infinite;
         animation: scroll-left 10s linear infinite;
+        padding-bottom: rem(10);
     }
     .delay {
         margin-top: rem(-10);
@@ -38,7 +39,7 @@
 }
 @media screen and (min-width: 992px) {
     #quotes{
-        padding-bottom: rem(196);
+        padding-bottom: rem(44);
         .marquee{
             @include font(38,51,$font-family--main);
         }

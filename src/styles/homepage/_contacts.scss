@@ -1,16 +1,17 @@
 @import "../abstracts/index";
 
-#contacts{background: #373E82;position: relative;padding-bottom:rem(25);
-    .contacts-wrapper{background: $bg--blue;padding-top: rem(22);padding-bottom:rem(22);
-        .title{@include font(24,34,$font-family--main);color: $color--light;padding-top: rem(12);padding-bottom: rem(14);text-align: center;}
+#contacts{position: relative;background:#FFF;
+    .contacts-wrapper{background: $bg--blue;padding-top: rem(22);padding-bottom:rem(22);width:75%;margin:0 auto;margin-top: rem(-25);transform:translateY(rem(25));border-radius: 8px;
+        .title{@include font(24,34,$font-family--main);color: $color--light;padding-top: rem(12);padding-bottom: rem(20);text-align: center;}
         .text-content{display: block;justify-content:center;padding: 0 rem(20);overflow:hidden;
             .email-wrapper{display: inline;}
             .mobile-text{@include font(15,18,$font-family--main);color: $color--light-opacity;text-transform: uppercase;display: block;}
-            .mobile-content{@include font(15,18,$font-family--main);color:$color--light;display: block;padding-bottom:rem(12);}
+            .mobile-content{@include font(15,18,$font-family--main);color:$color--light;display: block;padding-bottom:rem(20);}
             .email-text{@include font(15,18,$font-family--main);color: $color--light-opacity;text-transform: uppercase;display: block;}
-            .email-content{@include font(15,18,$font-family--main);color:$color--light;display: block;}
+            .email-content{@include font(15,24,$font-family--main);color:$color--light;display: block;}
         }
     }
+    .contacts-lower{background: #373E82;height:rem(50);}
 }
 
 @media screen and (min-width: 576px) {
@@ -26,13 +27,14 @@
 }
 
 @media screen and (min-width: 992px) {
-    #contacts{height: rem(101);
-        .contacts-wrapper{width: rem(531);height: rem(153);background: $bg--blue;border-radius: 8px;position: absolute;margin-top: rem(-162);left: 50%;transform: translateX(-50%);text-align:left;
+    #contacts{
+        .contacts-wrapper{width: rem(531);height: rem(153);background: $bg--blue;border-radius: 8px;text-align:left;margin:0 auto;margin-top:rem(-50);transform:translateY(rem(50));
             .text-content{display: flex;}
             .mobile-text{display: inline;margin-right: rem(5);}
             .mobile-content{display: inline;}
             .email-text{display: inline;margin-left: rem(32);margin-right: rem(5);}
             .email-content{display: inline;}
         }
+        .contacts-lower{background: #373E82;height:rem(150);}
     }
 }
