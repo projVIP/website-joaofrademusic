@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { DataContext } from '../../scripts/Context';
 import Box from '@mui/material/Box';
 import { Modal } from '@material-ui/core';
+import CloseIcon from '@mui/icons-material/Close';
 
 function About() {
     const data = useContext(DataContext);
@@ -14,7 +15,7 @@ function About() {
                     <div className="about-text-wrapper">
                         <span className="about-title">{data.aboutInfo.title}</span>
                         <div className="about-description" dangerouslySetInnerHTML={{ __html: data.aboutInfo.description }}></div>
-                        <a className="read-more main-btn" title="Read More" onClick={() => setModalOpen(true)}>Read More</a>
+                        <a className="read-more main-btn" title="Read More" onClick={() => setModalOpen(true)}>{data.aboutInfo.readMoreText}</a>
                         <Modal
                             open={modalOpen}
                             onClose={() => setModalOpen(false)}
@@ -24,6 +25,10 @@ function About() {
                             <Box>
                                 <div className="about-modal-title">{data.aboutInfo.title}</div>
                                 <div className="about-modal-description" dangerouslySetInnerHTML={{ __html: data.aboutInfo.description }}></div>
+
+                                <a className="close-icon" onClick={() => setModalOpen(false)}>
+                                    <CloseIcon></CloseIcon>
+                                </a>
                             </Box>
                         </Modal>
                     </div>

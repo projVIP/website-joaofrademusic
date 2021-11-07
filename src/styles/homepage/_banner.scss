@@ -29,6 +29,12 @@
 
         .scroll-btn{display: block;}
 
-        .banner-socialmedia{top:63%;left:rem(32);right:auto;transform: translateY(0);}
+        .banner-socialmedia{top:63%;left:rem(32);right:auto;transform: translateY(0);
+            .social-media-btn{
+                img{opacity: 0.3;transition: 0.3s ease all;
+                    &:hover{opacity: 1;}
+                }
+            }
+        }
     }
 }

@@ -50,6 +50,14 @@ function Navbar(props) {
         GTranslateFireEvent(teCombo, 'change');
     }
 
+    const navOnClick = (e) => {
+        setDrawerOpen(false);
+        e.preventDefault();
+      
+        let clickedItem = e.target.href.split('#')[1];
+        setTimeout(() => {document.getElementById(clickedItem).scrollIntoView({ behavior: 'smooth', block: 'start'})}, 250)
+      }
+
     return (
         <nav className="" id="navbar">
             <div className="custom-container">
@@ -60,7 +68,7 @@ function Navbar(props) {
                     {data.navbar.map((elem, index) => {
                         return (
                             <li className="nav-li" key={index}>
-                                <a onClick={props.linkOnClick} {...elem.navLinkSettings}>{elem.navLinkContent}</a>
+                                <a onClick={(e) => navOnClick(e)} {...elem.navLinkSettings}>{elem.navLinkContent}</a>
                             </li>
                         )
                     })}
@@ -93,7 +101,7 @@ function Navbar(props) {
                             {data.navbar.map((elem, index) => {
                                 return (
                                     <li className="nav-li" key={index}>
-                                        <a onClick={props.linkOnClick} {...elem.navLinkSettings}>{elem.navLinkContent}</a>
+                                        <a onClick={(e) => navOnClick(e)} {...elem.navLinkSettings}>{elem.navLinkContent}</a>
                                     </li>
                                 )
                             })}

@@ -18,13 +18,6 @@ const fetchData = async () => {
   return dataFetched;
 };
 
-const navOnClick = (e) => {
-  e.preventDefault();
-
-  let clickedItem = e.target.href.split('#')[1];
-  document.getElementById(clickedItem).scrollIntoView({ behavior: 'smooth', block: 'start'});;
-}
-
 function App() {
 
   const [data, setData] = useState("");
@@ -38,7 +31,7 @@ function App() {
     return (
       <DataContext.Provider value={data}>
         <div className="App">
-          <Navbar linkOnClick={navOnClick} />
+          <Navbar />
           <Banner />
           <About />
           <Discografia />

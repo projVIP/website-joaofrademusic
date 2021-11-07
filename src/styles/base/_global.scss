@@ -20,33 +20,42 @@ section{max-width: 100%;}
 }
 
 .MuiModal-root{
-    .MuiDrawer-paperAnchorRight{background: $bg--blue;width:100%;align-items:center;text-align:center;padding-top:rem(25);
-        .nav-list{padding: 0 rem(20);
-            .nav-li{list-style: none;padding-bottom:rem(8);
-                a{@include font(16,18,$font-family--main);color:$color--light;}
+    .MuiDrawer-paperAnchorRight{background: $bg--blue !important;width:100%;align-items:center;text-align:center;padding-top:rem(35);
+        .nav-list{padding: 0 rem(20);height:50%;display:flex;flex-wrap:wrap;padding-top:rem(30);
+            .nav-li{list-style: none;padding-bottom:rem(8);width:100%;
+                a{@include font(18,20,$font-family--main);color:$color--light;font-weight: 600;}
             }
         }
+        .close-icon{margin-left: auto;margin-right: rem(20);color:$color--light;}
     }
 }
 
-.MuiPaper-root{
+.MuiPaper-root{background: transparent !important;
     .MuiMenuItem-root{transition: all 0.3s ease;@include font(14,22,$font-family--main);
         &:hover{background: $bg--blue;color: $color--light;}
     }
     .Mui-focusVisible{background: $bg--blue !important;color:$color--light !important;}
+
+    .MuiList-root{
+        background: rgba(255,255,255,0.7) !important;
+    }
 }
 
-.MuiBox-root{position:absolute;width: calc(100% - 40px);left:50%;top:50%;transform: translate(-50%, -50%);background: $color--light;padding:rem(20);overflow: hidden;
+.MuiBox-root{position:absolute;width: calc(100% - 40px);left:50%;top:50%;transform: translate(-50%, -50%);background: $color--light !important;padding:rem(20);overflow: hidden;position: relative;
     .about-modal-title{@include font(28,38,$font-family--main);margin-bottom: rem(25);text-align: center;color:$color--blue;}
     .about-modal-description{@include font(14,20,$font-family--main);color:$color--gray;text-align: left;max-height: 70vh;overflow-y: scroll;padding-right:rem(15);
         &::-webkit-scrollbar{width: rem(4);}
         &::-webkit-scrollbar-thumb{background: $color--blue;}
     }
+    .close-icon{margin-left: auto;color:$color--gray;position: absolute;right: rem(20);top:rem(20);z-index: 9;cursor: pointer;}
 }
 
-.close-icon{margin-left: auto;margin-right: rem(20);color:$color--light;}
 .goog-te-gadget{display:none !important;}
 .skiptranslate select{display: none !important;}
+
+.slider-controller{
+    img{cursor: pointer;}
+}
 
 @media screen and (min-width: 992px) {
     .main-btn{width: rem(177);height: rem(50);@include font(16,20,$font-family--main);color:$color--light;background: $color--light-opacity;border:1px solid #CED4DA;

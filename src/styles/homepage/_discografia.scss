@@ -5,7 +5,7 @@
         .swiper-slide{
             .item{margin-right: 0;display:flex;justify-content:center;
                 .item-wrapper{position: relative;
-                    .overlay{position: absolute;top:0;left:0;width:273px;height:273px;background: rgba(0,0,0,0.1);transform: scale(0.91);display:flex;align-items:center;justify-content:center;}
+                    .overlay{position: absolute;top:0;left:0;width:273px;height:273px;background: rgba(0,0,0,0.1);transform: scale(0.91);align-items:center;justify-content:center;display: none;}
                 }
             }
         }
@@ -20,13 +20,15 @@
 
         &.swiper-slide-active{
             .disco-image{filter: blur(0px);transform: scale(1);}
-            .overlay{width:273px;height:273px;transform: scale(1) !important;}
+            .overlay{width:273px;height:273px;transform: scale(1) !important;display:flex !important;}
         }
     }
 
-    .info-slider-wrapper{margin-top: rem(47);}
+    .info-slider-wrapper{margin-top: rem(47);
+        .swiper-container{padding-bottom:rem(55);}
+    }
 
-    .slider-controller{justify-content: center;margin-top: rem(42);display:flex;align-items:center;
+    .slider-controller{justify-content: center;display:flex;align-items:center;
         .slide-number{@include font(12,18,$font-family--main);}
         .left{padding-right: rem(16);display: block;}
         .right{transform: rotate(180deg);padding-right: rem(16);display: block;}
