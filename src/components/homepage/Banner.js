@@ -15,7 +15,7 @@ function Banner(props) {
             <div className="banner-content" style={{ backgroundImage: "url(" + data.banner.bannerImg + ")" }}>
                 <div className="banner-text-wrapper">
                     <div className="banner-title">{data.banner.bannerTitle}</div>
-                    <a className="banner-link main-btn" href={data.banner.bannerBtn.title} title={"Go to " + data.banner.bannerBtn.title}>{data.banner.bannerBtn.title}</a>
+                    <a className="banner-link main-btn" href={data.banner.bannerBtn.link} title={"Go to " + data.banner.bannerBtn.title} target="_blank">{data.banner.bannerBtn.title}</a>
                 </div>
             </div>
 

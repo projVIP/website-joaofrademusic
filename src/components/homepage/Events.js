@@ -44,12 +44,21 @@ function Events(props) {
         });
     }
 
+    const styleGalleryVideo = {
+        height: "100%",
+        width: "100%",
+        display: "block"
+    };
+
     const renderGallery = data.galeria.map((value, index) => {
-        console.log(value.isVideo);
         return (
             <SwiperSlide key={index}>
                 <div className="gallery-image" style={{ backgroundImage: "url(" + value.ImageVideo + ")" }}>
+                {value.isVideo == false ?
                     <a onClick={() => openLightBox(index + 1)} className="lightbox"></a>
+                    :
+                    <a href={value.galleryImageVideo} target="_blank" style={styleGalleryVideo}></a>}
+
                     {value.isVideo == true &&
                         <div className="overlay">
                             <img src={play} alt="play" />
@@ -60,7 +69,11 @@ function Events(props) {
         )
     })
 
-    const renderGallerySources = data.galeria.map((value) => {
+    const renderGallerySources = data.galeria.filter((value) => {    
+        if(!value.galleryImageVideo.includes("youtube")){
+            return (value.galleryImageVideo)
+        } 
+    }).map((value) => {
         return (value.galleryImageVideo)
     })
 
@@ -69,9 +82,9 @@ function Events(props) {
             <div className="events-bg">
                 <div className="w-50 events-wrapper">
                     <div className="events-list">
-                        <span className="section-title">Upcoming Events</span>
+                        <span className="section-title">Próximos Eventos</span>
                         <div>
-                            {renderEvents.length > 0 ? renderEvents : <span className="no-events">There are no upcoming events at the moment</span>}
+                            {renderEvents.length > 0 ? renderEvents : <span className="no-events">Não existem eventos futuros de momento.</span>}
                         </div>
                     </div>
                 </div>

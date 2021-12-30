@@ -16,10 +16,10 @@ const Projects = () => {
             <SwiperSlide key={index}>
                 <div className="gallery-image" style={{ backgroundImage: "url(" + value.projectImage + ")" }}>
                     <div className="overlay">
-                        <div className="item-title">{value.projectTitle}</div>
-                        <div className="item-year">{value.projectYear}</div>
+                        <div className="item-title notranslate">{value.projectTitle}</div>
+                        {value.projectYear && <div className="item-year">{value.projectYear}</div>}
                         <div className="item-desc" dangerouslySetInnerHTML={{ __html: value.projectDesc }}></div>
-                        <a className="item-link main-btn" href={value.projectLink} target="_blank">{value.projectBtnText}</a>
+                        {value.projectLink && <a className="item-link main-btn" href={value.projectLink} target="_blank">{value.projectBtnText}</a>}
                     </div>
                 </div>
             </SwiperSlide>

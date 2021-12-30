@@ -28,7 +28,7 @@ const Contacts = () => {
                 </div>
                 </div>
             </div>
-            <div className="contacts-lower"></div>
+            <div className="contacts-lower"><div className='custom-container'>© João Frade Music, 2021</div></div>
         </section>
     )
 }

@@ -54,8 +54,8 @@
         .gallery-image{height: rem(661);
             .overlay{
                 .item-title{@include font(38,51,$font-family--main);}
-                .item-year{@include font(12,18,$font-family--main);margin-bottom: rem(32);}
-                .item-desc{@include font(16,24,$font-family--main);max-width: rem(770);padding:0 rem(20);}
+                .item-year{@include font(12,18,$font-family--main)}
+                .item-desc{@include font(16,24,$font-family--main);margin-top: rem(32);;max-width: rem(770);padding:0 rem(20);}
                 .item-link{width:rem(115);height:rem(27);}
             }
         }

@@ -10,7 +10,7 @@
             }
         }
     }
-    .swiper-slide{
+    .swiper-slide{pointer-events: none;
         .item{
             .disco-image{width:273px;height:273px;filter:blur(3px);transition:all 0.3s ease;border-radius: 3px;transform: scale(0.91);}
             .disco-title{@include font(38,51,$font-family--main);color:$color--gray;font-weight: 600;}
@@ -18,7 +18,7 @@
             .disco-desc{@include font(16,24,$font-family--main);font-weight: 400;color:$color--gray;margin-top: rem(22);padding: 0 rem(20);margin-left:auto;margin-right: auto;}
         }
 
-        &.swiper-slide-active{
+        &.swiper-slide-active{pointer-events: all;
             .disco-image{filter: blur(0px);transform: scale(1);}
             .overlay{width:273px;height:273px;transform: scale(1) !important;display:flex !important;}
         }

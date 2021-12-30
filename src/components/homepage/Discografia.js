@@ -22,14 +22,23 @@ function Discografia(props) {
     const firstSlideContent = data.discografia.map((value, index) => {
         return (
             <SwiperSlide key={index}>
-                <a className="item" href={value.discoLink} target="_blank">
+                {value.discoLink != null && value.discoLink != "" ?
+                    <a className="item" href={value.discoLink} target="_blank">
+                        <div className="item-wrapper">
+                            <img data-link={value.discoLink} className="disco-image" src={value.discoImg} />
+                            <div className="overlay">
+                                <img src={play} alt="play" />
+                            </div>
+                        </div>
+                    </a>
+                    :
+                    <a className="item">
                     <div className="item-wrapper">
                         <img data-link={value.discoLink} className="disco-image" src={value.discoImg} />
-                        <div className="overlay">
-                            <img src={play} alt="play" />
-                        </div>
                     </div>
                 </a>
+                }
+
             </SwiperSlide>
         )
     })
@@ -39,9 +48,9 @@ function Discografia(props) {
         return (
             <SwiperSlide key={index}>
                 <div className="item">
-                    <div className="disco-title">{value.discoTitle}</div>
+                    <div className="disco-title notranslate">{value.discoTitle}</div>
                     <div className="disco-year">- {value.discoYear} -</div>
-                    <div className="disco-desc">{value.discoDesc}</div>
+                    <div className="disco-desc" dangerouslySetInnerHTML={{ __html: value.discoDesc }}></div>
                 </div>
             </SwiperSlide>
         )
@@ -62,6 +71,8 @@ function Discografia(props) {
                 <Swiper
                     slidesPerView={1}
                     onSwiper={setFirstSwiper}
+                    allowSlideNext={false}
+                    allowSlidePrev={false}
                     breakpoints={
                         {
                             "576": {

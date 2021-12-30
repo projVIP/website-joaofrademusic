@@ -11,7 +11,9 @@
             .email-content{@include font(15,24,$font-family--main);color:$color--light;display: block;}
         }
     }
-    .contacts-lower{background: #373E82;height:rem(50);}
+    .contacts-lower{background: #373E82;height:rem(50);display: flex;align-items: center;
+        .custom-container{color: $color--light;}
+    }
 }
 
 @media screen and (min-width: 576px) {

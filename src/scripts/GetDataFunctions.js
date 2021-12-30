@@ -1,7 +1,15 @@
-import data from '../assets/website-data.json'
-
 const fetchData = async () => {
-    return data;
+    try {
+        const response = await fetch('/assets/website-data.json');
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        let data = await response.json();
+        return data;
+
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 export default{
