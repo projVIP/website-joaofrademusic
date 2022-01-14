@@ -1,10 +1,15 @@
 @import "../abstracts/index";
 
 #mod-banner{width:100%;position:relative;
-    .banner-content{width:100%;height: rem(500);background-size: cover;background-repeat: no-repeat;display:flex;align-items:center;justify-content:center;background-position:center;
-        .banner-text-wrapper{
-            .banner-title{display: block;@include font(18,22,$font-family--main);color:$color--light}
-            .banner-link{margin-top: rem(16);}
+    .banner-content{width:100%;height: rem(500);background-size: cover;background-repeat: no-repeat;display:flex;align-items:flex-end;justify-content:center;background-position:center;
+        .banner-content-wrapper{display: flex;width: 100%;align-items: center;padding-bottom: rem(20);padding-right: rem(20);
+            .banner-text-wrapper{margin-left: auto;transform: translateX(24px);
+                .banner-title{display: block;@include font(18,22,$font-family--main);color:$color--light}
+                .banner-link{margin-top: rem(16);}
+            }
+            .banner-socialmedia{margin-left:auto;
+                .social-media-btn{display:block;margin-top: rem(8);}
+            }
         }
     }
 
@@ -17,29 +22,27 @@
             .scroll-line{color: $color--light;}
         }
     }
-
-    .banner-socialmedia{position:absolute;top:100%;right:rem(20);transform: translateY(-110%);
-        .social-media-btn{display:block;margin-top: rem(8);}
-    }
 }
 
 @media screen and (min-width: 992px) {
     #mod-banner{
-        .banner-content{height: rem(802);
-            .banner-text-wrapper{
-                .banner-title{@include font(28,38,$font-family--main);}
-                .banner-link{height:rem(50);width:rem(170);@include font(16,20,$font-family--main);}
+        .banner-content{height: rem(802);align-items:center;
+            .banner-content-wrapper{
+                .banner-text-wrapper{margin-right: auto;
+                    .banner-title{@include font(28,38,$font-family--main);}
+                    .banner-link{height:rem(50);width:rem(170);@include font(16,20,$font-family--main);}
+                }
+
+                .banner-socialmedia{top:63%;left:rem(32);right:auto;transform: translateY(0);position:absolute;
+                    .social-media-btn{
+                        img{opacity: 0.3;transition: 0.3s ease all;
+                            &:hover{opacity: 1;}
+                        }
+                    }
+                }
             }
         }
 
         .scroll-btn{display: block;}
-
-        .banner-socialmedia{top:63%;left:rem(32);right:auto;transform: translateY(0);
-            .social-media-btn{
-                img{opacity: 0.3;transition: 0.3s ease all;
-                    &:hover{opacity: 1;}
-                }
-            }
-        }
     }
 }

@@ -11,8 +11,15 @@
             .email-content{@include font(15,24,$font-family--main);color:$color--light;display: block;}
         }
     }
-    .contacts-lower{background: #373E82;height:rem(50);display: flex;align-items: center;
-        .custom-container{color: $color--light;}
+    .contacts-lower{background: #373E82;display: flex;align-items: center;
+        .custom-container{color: $color--light;align-items:center;flex-wrap:wrap;padding-bottom:rem(16);padding-top:rem(41);
+            span{width:100%;opacity:0.2;}
+            .footer-links-wrapper{margin-left: auto;width:100%;margin-top:rem(15);margin-right:auto;display:flex;flex-wrap:wrap;justify-content:center;
+                .footer-link{padding:16px;
+                    img{height: 32px;}
+                }
+            }
+        }
     }
 }
 
@@ -37,6 +44,15 @@
             .email-text{display: inline;margin-left: rem(32);margin-right: rem(5);}
             .email-content{display: inline;}
         }
-        .contacts-lower{background: #373E82;height:rem(150);}
+        .contacts-lower{background: #373E82;
+            .custom-container{padding-bottom:rem(16);padding-top:rem(66);
+                span{width:auto;opacity:0.2;}
+                .footer-links-wrapper{width:auto;margin-top:rem(0);transform:translateX(-91px);display:block;
+                    .footer-link{padding:0 16px;
+                        img{}
+                    }
+                }
+            }
+        }
     }
 }

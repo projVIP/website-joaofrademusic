@@ -202,8 +202,28 @@
   "contacts": {
     "contactPhone": "(+351) 963 840 453",
     "contactEmails": [
-      {"email": "info@joaofrademusic.com"},
-      {"email": "geral@alg-eventos.pt"}
+      {
+        "email": "info@joaofrademusic.com"
+      },
+      {
+        "email": "geral@alg-eventos.pt"
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "image": "/assets/gallery/gallery3.jpg",
+        "url": "www.google.pt"
+      },
+      {
+        "image": "/assets/gallery/gallery3.jpg",
+        "url": "www.google.pt"
+      },
+      {
+        "image": "/assets/gallery/gallery3.jpg",
+        "url": "www.google.pt"
+      }
     ]
   }
 }

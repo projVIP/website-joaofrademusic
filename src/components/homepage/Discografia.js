@@ -71,8 +71,6 @@ function Discografia(props) {
                 <Swiper
                     slidesPerView={1}
                     onSwiper={setFirstSwiper}
-                    allowSlideNext={false}
-                    allowSlidePrev={false}
                     breakpoints={
                         {
                             "576": {

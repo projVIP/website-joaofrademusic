@@ -25,11 +25,11 @@ function Events(props) {
 
         if (eventDate >= today) {
 
-            const eventItem = (<div className="event-item" key={index}>
+            const eventItem = (<li className="event-item" key={index}>
                 <div className="event-date">{value.eventoDate}</div>
                 <div className="event-title">{value.eventoTitle}</div>
                 <div className="event-local">{value.eventoLocal}</div>
-            </div>);
+            </li>);
 
             acc.push(eventItem);
         }
@@ -83,9 +83,9 @@ function Events(props) {
                 <div className="w-50 events-wrapper">
                     <div className="events-list">
                         <span className="section-title">Próximos Eventos</span>
-                        <div>
-                            {renderEvents.length > 0 ? renderEvents : <span className="no-events">Não existem eventos futuros de momento.</span>}
-                        </div>
+                        <ul className="events-list-wrapper">
+                            {renderEvents.length > 0 ? renderEvents : <li className="no-events">Não existem eventos futuros de momento.</li>}
+                        </ul>
                     </div>
                 </div>
                 <div className="w-50 gallery-wrapper">

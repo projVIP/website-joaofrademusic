@@ -15,20 +15,35 @@ const Contacts = () => {
         )
     })
 
+    const renderFooterLinks = data.footer.links.map((value, index) => {
+        return(
+            <a className='footer-link' target="_blank" href={value.url} key={index}>
+                <img src={value.image} alt={index} />
+            </a>
+        )
+    })
+
     return (
         <section id="contacts">
             <div className="contacts-wrapper">
-                <div className="title">Contacts</div>
+                <div className="title">Contatos</div>
                 <div className="text-content">
-                <span className="mobile-text">Mobile:</span>
-                <a className="mobile-content" href={"tel:" + data.contacts.contactPhone}>{data.contacts.contactPhone}</a>
-                <span className="email-text">Email:</span>
-                <div className="email-wrapper">
-                    {renderEmails}
-                </div>
+                    <span className="mobile-text notranslate">TLF:</span>
+                    <a className="mobile-content" href={"tel:" + data.contacts.contactPhone}>{data.contacts.contactPhone}</a>
+                    <span className="email-text">Email:</span>
+                    <div className="email-wrapper">
+                        {renderEmails}
+                    </div>
                 </div>
             </div>
-            <div className="contacts-lower"><div className='custom-container'>© João Frade Music, 2021</div></div>
+            <div className="contacts-lower">
+                <div className='custom-container'>
+                    <span>© João Frade Music, 2021</span>
+                    <div className='footer-links-wrapper'>
+                        {renderFooterLinks}
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }

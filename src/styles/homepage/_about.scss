@@ -5,7 +5,7 @@
     .custom-container{max-width: rem(1183);position:relative;flex-wrap:wrap;}
     .about-text-wrapper{width:100%;text-align:left;
         .about-title{@include font(24,34,$font-family--main);color:$color--light;margin-top: rem(45);display:flex;}
-        .about-description{@include font(16,18,$font-family--main);color:$color--light;margin-top: rem(32);overflow:hidden;@include linelimit(25,450,vertical);}
+        .about-description{@include font(16,18,$font-family--main);color:$color--light;margin-top: rem(32);overflow:hidden;@include linelimit(25,514,vertical);}
         .read-more{cursor: pointer;text-transform: capitalize;margin-top: rem(42);}
     }
     .about-photos{width: 100%;flex-shrink:0;right:0;display:flex;flex-wrap:wrap;margin-top:rem(32);

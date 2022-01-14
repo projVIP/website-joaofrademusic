@@ -29,7 +29,6 @@ function Navbar(props) {
     }
 
     const doGTranslate = (lang_pair) => {
-        console.log("teste");
         if (lang_pair.value)
             lang_pair = lang_pair.value;
         if (lang_pair == '')
@@ -46,6 +45,14 @@ function Navbar(props) {
                 break;
             }
 
+        // if (document.getElementById('google_translate_element') == null || document.getElementById('google_translate_element').innerHTML.length == 0 || teCombo.length == 0 || teCombo.innerHTML.length == 0) {
+        //     setTimeout(function () {
+        //         doGTranslate(lang_pair)
+        //     }, 500)
+        // } else {
+        //     teCombo.value = lang;
+        //     GTranslateFireEvent(teCombo, 'change');
+        // }
         teCombo.value = lang;
         GTranslateFireEvent(teCombo, 'change');
     }
@@ -53,11 +60,10 @@ function Navbar(props) {
     const navOnClick = (e) => {
         setDrawerOpen(false);
         e.preventDefault();
-      
-        let clickedItem = e.target.href.split('#')[1];
-        setTimeout(() => {document.getElementById(clickedItem).scrollIntoView({ behavior: 'smooth', block: 'start'})}, 250)
-      }
 
+        let clickedItem = e.target.href.split('#')[1];
+        setTimeout(() => { document.getElementById(clickedItem).scrollIntoView({ behavior: 'smooth', block: 'start' }) }, 250)
+    }
     return (
         <nav className="" id="navbar">
             <div className="custom-container">

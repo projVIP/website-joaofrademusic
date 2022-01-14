@@ -4,7 +4,7 @@ import SocialMedia from '../global/SocialMedia';
 
 
 const scrollBtnClick = () => {
-    document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'start'});;
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'start' });;
 }
 
 function Banner(props) {
@@ -13,9 +13,15 @@ function Banner(props) {
     return (
         <section id="mod-banner">
             <div className="banner-content" style={{ backgroundImage: "url(" + data.banner.bannerImg + ")" }}>
-                <div className="banner-text-wrapper">
-                    <div className="banner-title">{data.banner.bannerTitle}</div>
-                    <a className="banner-link main-btn" href={data.banner.bannerBtn.link} title={"Go to " + data.banner.bannerBtn.title} target="_blank">{data.banner.bannerBtn.title}</a>
+                <div className="banner-content-wrapper">
+                    <div className="banner-text-wrapper">
+                        <div className="banner-title">{data.banner.bannerTitle}</div>
+                        <a className="banner-link main-btn" href={data.banner.bannerBtn.link} title={"Go to " + data.banner.bannerBtn.title} target="_blank">{data.banner.bannerBtn.title}</a>
+                    </div>
+
+                    <div className="banner-socialmedia">
+                        <SocialMedia />
+                    </div>
                 </div>
             </div>
 
@@ -23,9 +29,6 @@ function Banner(props) {
                 <span className="scroll-text">SCROLL</span>
                 <div className="scroll-line"></div>
             </a>
-            <div className="banner-socialmedia">
-                <SocialMedia />
-            </div>
         </section>
     );
 }

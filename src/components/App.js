@@ -12,6 +12,7 @@ import PressKits from './homepage/PressKits';
 import Projects from './homepage/Projects';
 import Quotes from './homepage/Quotes';
 import Contacts from './homepage/Contacts';
+import Loader from './loader/Loader';
 
 const fetchData = async () => {
   let dataFetched = await GetDataFunctions.fetchData;
@@ -44,7 +45,9 @@ function App() {
       </DataContext.Provider>
     );
   } else {
-    return (<div>loading...</div>)
+    return (
+      <Loader />
+    )
   }
 
 }

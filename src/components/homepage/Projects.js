@@ -17,7 +17,6 @@ const Projects = () => {
                 <div className="gallery-image" style={{ backgroundImage: "url(" + value.projectImage + ")" }}>
                     <div className="overlay">
                         <div className="item-title notranslate">{value.projectTitle}</div>
-                        {value.projectYear && <div className="item-year">{value.projectYear}</div>}
                         <div className="item-desc" dangerouslySetInnerHTML={{ __html: value.projectDesc }}></div>
                         {value.projectLink && <a className="item-link main-btn" href={value.projectLink} target="_blank">{value.projectBtnText}</a>}
                     </div>
