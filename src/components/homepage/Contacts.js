@@ -38,10 +38,14 @@ const Contacts = () => {
             </div>
             <div className="contacts-lower">
                 <div className='custom-container'>
-                    <span>© João Frade Music, 2021</span>
+                    <span className='copyright-content'>© João Frade Music, 2021</span>
                     <div className='footer-links-wrapper'>
                         {renderFooterLinks}
                     </div>
+                    <a href='https://github.com/projVIP' className='github' target="_blank">
+                        <span>Made By: </span>
+                        <span class="fab fa-github"></span>
+                    </a>
                 </div>
             </div>
         </section>
